@@ -63,14 +63,6 @@ Voici les commandes pour faire marcher VueJS :
 ```bash
 cd vue
 ```
--Puis, installer les modules :
-```bash
-cd npm i
-```
--Ensuite, sur deux terminaux différents, taper les deux commandes pour mettre en marche le serveur et le front : 
-```bash
-npm run server
-npm run serve
-```
+-Puis, lire le README.md de ce dossier
 
 Les étapes réalisées, attachez votre ceinture et c'est parti ! 
