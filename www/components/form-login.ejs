@@ -1,0 +1,16 @@
+<!-- 
+    Create the login form
+-->
+
+<form action="/login" method="POST">
+
+    <label for="email">Email adress</label>
+    <input type="email" name="email" required minlength="5" value="alex@test.com">
+
+    <label for="password">Password</label>
+    <input type="password" name="password" required minlength="5" value="test123456">
+
+    <button type="submit">Login</button>
+    <input type="button" value="Register" onclick="self.location.href='/register'" style="background-color:#3cb371" style="color:white; font-weight:bold"onclick> 
+
+</form>

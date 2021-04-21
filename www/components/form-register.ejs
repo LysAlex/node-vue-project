@@ -1,0 +1,21 @@
+<!--
+   Create a register form
+-->
+
+<form action="/register" method="POST">
+
+    <label for="email">Email adress</label>
+    <input type="email" name="email" required minlength="5" value="alex@test.com">
+
+    <label for="givenName">First name</label>
+    <input type="text" name="givenName" required minlength="2" value="Alex">
+
+    <label for="familyName">Last name</label>
+    <input type="text" name="familyName" required minlength="2" value="Lys">
+
+    <label for="password">Password</label>
+    <input type="password" name="password" required minlength="5" value="test123456">
+
+    <button type="submit">Register</button>
+
+</form>

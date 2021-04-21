@@ -1,0 +1,15 @@
+<!-- 
+    Create a post form 
+-->
+
+<form action="/post" method="POST">
+
+    <label for="headline">Title</label>
+    <input type="text" name="headline" required minlength="2" value="Mon super titre">
+
+    <label for="body">Content</label>
+    <textarea name="body" required minlength="2">Insert content</textarea>
+
+    <button type="submit">Add</button>
+
+</form>

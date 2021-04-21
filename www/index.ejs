@@ -1,0 +1,25 @@
+<!-- Include header.ejs -->
+<%- include('statics/header') -%>
+
+<main>
+    <h2>Protected page</h2>
+
+    <h3>Add an item</h3>
+    <%- include('components/form-post') -%>
+
+    <h3>Item list</h3>
+    <% if( data.data ) { %>
+        <% for(let item of data.data) { %>
+            <li>
+                <h4><%- item.headline %></h4>
+                <a href="/post/<%- item._id %>">See more</a>
+            </li>
+        <% } %>
+    <% } else { %>
+        <p>No post</p>
+        <img src="https://cdn.discordapp.com/emojis/711967009721548852.gif?v=1">
+    <% } %>
+</main>
+
+<!-- Include footer.ejs -->
+<%- include('statics/footer') -%>  

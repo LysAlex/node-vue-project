@@ -1,0 +1,79 @@
+<!-- Include header.ejs -->
+<%- include('statics/header') -%>
+
+<main>
+	<h2>Protected page</h2>
+
+	<h3>Item</h3>
+
+	<p>
+		<%- data.data.post.headline %>
+		<span class="glyphicon glyphicon-heart like_button like_post" onclick="like('post', '<%- data.data.post.id %>')"> <span class="counter" id="counterPost"><%- data.data.post.likes.length %></span></span>
+	</p><br>
+
+
+	<p>
+		<%- data.data.post.body %>
+	</p>
+
+	<h4>Comments list</h4>
+	<% if( data.data.comments != 0 ) { %>
+		<ul>
+			<% for(let item of data.data.comments) { %>
+				<li>
+					<div>
+						<span class="username"><%= new Date(item.dateModified).toLocaleString(); %>
+							-
+							<%-item.author.givenName %>
+							:
+						</span>
+						<p class="comment">
+							<span class="comment_content"><%- item.content %></span>
+							<% if( item.author.id == data.data.user.id ) { %>
+								<span class="glyphicon glyphicon-edit edit_button" id="btnEdit" onclick="openModal('<%- item.id %>')"></span>
+							<% } %>
+							<span class="glyphicon glyphicon-heart like_button" onclick="like('comment', '<%- item.id %>' )"><span class="counter" id="counterComment<%- item.id %>"><%- item.likes.length %></span></span>
+						</p>
+						<% if( item.author.id == data.data.user.id ) { %>
+							<div id="<%- item.id %>" class="modal">
+								<div class="modal-content">
+									<span class="close" id="span<%- item.id %>" onclick="closeModal('<%- item.id %>')">&times;</span><br>
+
+                                    <!-- UPDATE FORM -->
+									<form name="comment_form_update<%- item.id %>" id="comment_form_update" action="/comment/update" method="POST">
+
+                                        <input type="hidden" name="id" value="<%- item.id %>">
+										<input type="hidden" name="post" id="post" value="<%- data.data.post.id %>">
+
+										<label for="email">Update your comment</label><br><br>
+										<textarea name="content" id="content" rows="100" required><%- item.content %></textarea><br><br><br>
+
+										<button type="submit" class="success-btn">Update</button>
+									</form>
+
+                                    <!-- DELETE FORM -->
+                                    <form name="comment_form_delete<%- item.id %>" id="comment_form_update" action="/comment/delete" method="POST">
+                                        <input type="hidden" name="id" value="<%- item.id %>">
+                                        <input type="hidden" name="post" id="post" value="<%- data.data.post.id %>">
+                                        <button type="submit" class="error-btn delete-btn">Delete</button>
+                                    </form>
+								</div>
+							</div>
+						<% } %>
+					</div>
+				</li>
+			<% } %>
+		</ul>
+	<% } else { %>
+		<p>No comment</p>
+		<img src="https://cdn.discordapp.com/emojis/668047874394947584.gif?v=1">
+	<% } %>
+
+	<section>
+		<%- include('components/form-comment') -%>
+	</section>
+
+</main>
+
+<!-- Include footer.ejs -->
+<%- include('statics/footer') -%>
