@@ -21,28 +21,6 @@
   ],
   "artists": [
     {
-      "id": 1,
-      "name": "Coldplay",
-      "country": "Great Britain",
-      "avatar": "https://upload.wikimedia.org/wikipedia/en/1/1d/Coldplay_shot_by_Marcus_Haney_01.png",
-      "description": "Il est formé par l'auteur-compositeur-interprète Chris Martin et le guitariste Jon Buckland. Le bassiste Guy Berryman rejoint ensuite le groupe, avant que le batteur Will Champion ne vienne compléter le quatuor.",
-      "origin": "Great Britain"
-    },
-    {
-      "id": 2,
-      "name": "Tom misch",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Tom_Misch%2C_The_Novo%2C_April_2018_%28cropped%29.jpg/800px-Tom_Misch%2C_The_Novo%2C_April_2018_%28cropped%29.jpg",
-      "origin": "Great Britan",
-      "description": "Thomas Abraham Misch (born 25 June 1995) is an English musician and producer. He began releasing music on SoundCloud in 2012 and released his debut studio album Geography in 2018"
-    },
-    {
-      "id": 3,
-      "name": "Damso",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Festival_des_Vieilles_Charrues_2018_-_Damso_-_006.jpg/800px-Festival_des_Vieilles_Charrues_2018_-_Damso_-_006.jpg",
-      "origin": "Belgique",
-      "description": "Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa (Zaïre, actuelle République démocratique du Congo), est un rappeur et auteur-compositeur-interprète belgo-congolais."
-    },
-    {
       "name": "Arthur Hamel",
       "description": "Le Boss des lapins, invétérable rappeur de carotte, il fait danser les chasseurs sur scène.",
       "avatar": "https://emoji.slack-edge.com/TBR2H4V1S/pepearthur2/ab0dff04334d62d9.png",
@@ -59,13 +37,6 @@
       "description": "AKA Pepe Master, le roi des trolleurs, attention à la corne. Vous risquez d'attraper la fière du troll et des pepe ...",
       "avatar": "https://emoji.gg/assets/emoji/5325_PeppoUnicornioV11.png",
       "id": 6
-    },
-    {
-      "name": "test",
-      "description": "test",
-      "origin": "test",
-      "avatar": "https://cdn.discordapp.com/emojis/780515158090579968.gif?v=1",
-      "id": 7
     }
   ]
 }
