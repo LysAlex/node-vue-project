@@ -1,4 +1,4 @@
-# [03/2021] Boilerplate : NodeJS/ExpressJS API/backoffice
+# [04/2021] Boilerplate : NodeJS/ExpressJS API/backoffice + VueJS
 
 Ce répertoire a été réalisé dans le cadre d'une formation aux techniques spécifiques à la mise en place d'une API RestFull en NodeJS. Ce projet est connecté à une base de données MongoDB, vous devez vous assurer qu'une instance soit accessible dans votre environnement de travail.
 
@@ -54,3 +54,23 @@ En informatique un "Boilerplate" est un code de départ qui permet d'initier un 
 - [x] Vérification des requêtes
 - [x] Protection des routes avec PassportJS
 - [x] Gestion d'un backoffice
+
+## Pour VueJS
+
+Voici les commandes pour faire marcher VueJS :
+
+-Tout d'abord, entrer dans le dossier vue
+```bash
+cd vue
+```
+-Puis, installer les modules :
+```bash
+cd npm i
+```
+-Ensuite, sur deux terminaux différents, taper les deux commandes pour mettre en marche le serveur et le front : 
+```bash
+npm run server
+npm run serve
+```
+
+Les étapes réalisées, attachez votre ceinture et c'est parti ! 
